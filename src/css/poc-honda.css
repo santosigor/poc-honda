@@ -1,0 +1,378 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background: #e8e8e8; }
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  cursor: pointer; }
+
+header {
+  background: #ffffff;
+  border-bottom: solid 1px #d8d8d8;
+  padding: 20px;
+  text-align: center; }
+  header h1 a {
+    display: inline-block; }
+    header h1 a img {
+      width: 205px;
+      height: auto; }
+      @media only screen and (max-width: 1017px) {
+        header h1 a img {
+          width: auto;
+          height: 40px; } }
+
+.text-right {
+  text-align: right; }
+
+section {
+  padding: 85px 0; }
+  @media screen and (max-width: 767.98px) {
+    section {
+      padding: 30px 15px; } }
+  section form .poc-honda-container {
+    width: 100%;
+    max-width: 850px;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    border: solid 1px #d8d8d8;
+    padding: 20px 20px 0 20px; }
+    section form .poc-honda-container h2 {
+      font-size: 20px;
+      color: #222;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 15px; }
+    section form .poc-honda-container .poc-honda-steps {
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+      padding: 12px 20px; }
+      section form .poc-honda-container .poc-honda-steps ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -moz-justify-content: space-around;
+        -webkit-justify-content: space-around;
+        -o-justify-content: space-around;
+        -ms-justify-content: space-around; }
+        @media screen and (max-width: 767.98px) {
+          section form .poc-honda-container .poc-honda-steps ul {
+            flex-direction: column;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column; } }
+        section form .poc-honda-container .poc-honda-steps ul li {
+          padding-right: 40px;
+          padding-left: 0px;
+          position: relative;
+          display: flex;
+          display: -webkit-flex;
+          align-items: center;
+          -moz-align-items: center;
+          -webkit-align-items: center;
+          -o-align-items: center;
+          -ms-align-items: center;
+          font-weight: bold;
+          color: #999; }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps ul li {
+              margin: 10px auto;
+              width: 160px;
+              padding-right: 0px; } }
+          section form .poc-honda-container .poc-honda-steps ul li .poc-honda-steps-number {
+            display: flex;
+            display: -webkit-flex;
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            align-items: center;
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            justify-content: center;
+            -moz-justify-content: center;
+            -webkit-justify-content: center;
+            -o-justify-content: center;
+            -ms-justify-content: center;
+            border: 2px solid #999;
+            margin-right: 15px; }
+          section form .poc-honda-container .poc-honda-steps ul li.active {
+            color: #222; }
+            section form .poc-honda-container .poc-honda-steps ul li.active .poc-honda-steps-number {
+              border: 2px solid #222; }
+            section form .poc-honda-container .poc-honda-steps ul li.active .poc-honda-steps-text {
+              color: #222; }
+    section form .poc-honda-container .poc-honda-steps-content {
+      display: none;
+      padding: 40px 0 0 0; }
+      section form .poc-honda-container .poc-honda-steps-content.active {
+        display: block; }
+      section form .poc-honda-container .poc-honda-steps-content .select-file {
+        border: 1px dashed #ccc;
+        padding: 25px;
+        text-align: center; }
+        section form .poc-honda-container .poc-honda-steps-content .select-file .select-file-name {
+          display: block;
+          margin-bottom: 20px; }
+          section form .poc-honda-container .poc-honda-steps-content .select-file .select-file-name.success {
+            color: #27ae60; }
+          section form .poc-honda-container .poc-honda-steps-content .select-file .select-file-name.error {
+            color: #ed1c24; }
+        section form .poc-honda-container .poc-honda-steps-content .select-file .ipt-file {
+          text-align: center; }
+          section form .poc-honda-container .poc-honda-steps-content .select-file .ipt-file span {
+            border: 1px solid #ccc;
+            background: #eee;
+            padding: 5px 20px;
+            display: inline-block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            position: relative;
+            overflow: hidden; }
+            section form .poc-honda-container .poc-honda-steps-content .select-file .ipt-file span input {
+              opacity: 0;
+              filter: alpha(opacity=0);
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              cursor: pointer; }
+        @media screen and (max-width: 767.98px) {
+          section form .poc-honda-container .poc-honda-steps-content .select-file {
+            padding: 20px; } }
+        section form .poc-honda-container .poc-honda-steps-content .select-file.error {
+          border-color: #ed1c24; }
+      section form .poc-honda-container .poc-honda-steps-content .form-group {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -o-align-items: center;
+        -ms-align-items: center;
+        margin-bottom: 30px;
+        position: relative; }
+        @media screen and (max-width: 767.98px) {
+          section form .poc-honda-container .poc-honda-steps-content .form-group {
+            flex-direction: column;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column; } }
+        section form .poc-honda-container .poc-honda-steps-content .form-group label {
+          display: inline-block;
+          width: 165px;
+          text-align: right;
+          margin-right: 27px;
+          margin-bottom: 0;
+          font-weight: 400; }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps-content .form-group label {
+              width: 100%;
+              text-align: left;
+              margin-right: 0px;
+              margin-bottom: 15px; } }
+        section form .poc-honda-container .poc-honda-steps-content .form-group input, section form .poc-honda-container .poc-honda-steps-content .form-group select, section form .poc-honda-container .poc-honda-steps-content .form-group textarea {
+          outline: none;
+          appearance: unset !important;
+          -moz-appearance: unset !important;
+          -webkit-appearance: unset !important;
+          -o-appearance: unset !important;
+          -ms-appearance: unset !important;
+          box-sizing: border-box;
+          background: transparent;
+          font-size: 14px;
+          padding: 15px 20px;
+          border: 1px solid #ebebeb;
+          display: block;
+          width: 415px; }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps-content .form-group input, section form .poc-honda-container .poc-honda-steps-content .form-group select, section form .poc-honda-container .poc-honda-steps-content .form-group textarea {
+              width: 100%; } }
+          section form .poc-honda-container .poc-honda-steps-content .form-group input.error, section form .poc-honda-container .poc-honda-steps-content .form-group select.error, section form .poc-honda-container .poc-honda-steps-content .form-group textarea.error {
+            border-color: #ed1c24; }
+        section form .poc-honda-container .poc-honda-steps-content .form-group textarea {
+          width: calc(100% - 192px); }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps-content .form-group textarea {
+              width: 100%; } }
+      section form .poc-honda-container .poc-honda-steps-content a.bt {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        background: #ed1c24;
+        margin-left: 20px;
+        border-bottom: solid 1px #8d0005;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none !important;
+        text-align: center;
+        transition: background .2s ease-in-out, border .2s ease-in-out, color .2s ease-in-out; }
+        @media screen and (max-width: 767.98px) {
+          section form .poc-honda-container .poc-honda-steps-content a.bt {
+            padding: 15px 20px; } }
+        section form .poc-honda-container .poc-honda-steps-content a.bt:hover {
+          background-color: #ffffff;
+          color: #8b0000; }
+        section form .poc-honda-container .poc-honda-steps-content a.bt.back {
+          background: #f1f1f1;
+          color: #999;
+          border-bottom: solid 1px #999; }
+          section form .poc-honda-container .poc-honda-steps-content a.bt.back:hover {
+            background-color: #ffffff; }
+      section form .poc-honda-container .poc-honda-steps-content .poc-honda-steps-button {
+        border-top: 1px solid #ebebeb;
+        padding: 20px 0;
+        margin-top: 40px;
+        text-align: right; }
+      section form .poc-honda-container .poc-honda-steps-content .form-assinatura {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -o-align-items: center;
+        -ms-align-items: center;
+        margin-bottom: 30px; }
+        @media screen and (max-width: 767.98px) {
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura {
+            flex-direction: column;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column; } }
+        section form .poc-honda-container .poc-honda-steps-content .form-assinatura * {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none; }
+        section form .poc-honda-container .poc-honda-steps-content .form-assinatura label {
+          display: inline-block;
+          width: 165px;
+          text-align: right;
+          margin-right: 27px;
+          margin-bottom: 0;
+          font-weight: 400; }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps-content .form-assinatura label {
+              width: 100%;
+              text-align: left;
+              margin-right: 0px;
+              margin-bottom: 15px; } }
+        section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt {
+          position: relative;
+          overflow: hidden;
+          width: calc(100% - 192px); }
+          @media screen and (max-width: 767.98px) {
+            section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt {
+              width: 100%; } }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt canvas {
+            margin: 0 auto; }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigPad {
+            width: 100%; }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigWrapper.current {
+            border: 0;
+            border: 1px solid #ebebeb;
+            overflow: hidden; }
+            section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigWrapper.current.error {
+              border-color: #ed1c24; }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigWrapper {
+            height: auto;
+            background: #fff; }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigNav {
+            height: 20px; }
+          section form .poc-honda-container .poc-honda-steps-content .form-assinatura .ipt .sigNav .clearButton {
+            cursor: pointer; }
+      section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf {
+        display: none; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf .title {
+          font-size: 20px;
+          color: #222;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-top: 20px;
+          height: 30px; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf #poc-honda-dados-pdf-xml {
+          width: 100%;
+          margin-top: 20px; }
+          section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf #poc-honda-dados-pdf-xml p b {
+            font-weight: bold; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf p {
+          margin-bottom: 20px; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf .list-contrato p b {
+          font-weight: bold; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf .assinatura-contrato {
+          margin-top: 60px;
+          height: 250px;
+          background-image: url("../images/logo-honda.jpg");
+          background-color: #3c3; }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-dados-pdf .page-break {
+          page-break-before: always; }
+      section form .poc-honda-container .poc-honda-steps-content #poc-honda-steps-success {
+        margin-bottom: 40px;
+        position: relative;
+        height: 700px; }
+        @media (max-width: 991.98px) {
+          section form .poc-honda-container .poc-honda-steps-content #poc-honda-steps-success {
+            display: none; } }
+        section form .poc-honda-container .poc-honda-steps-content #poc-honda-steps-success iframe {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          padding-bottom: 10px;
+          border: 0; }
+
+.bt-email {
+  text-align: center;
+  margin: 0 0 40px 0; }
+  .bt-email a {
+    margin-left: 0 !important; }
+
+.select-file-img-preview {
+  text-align: center; }
+  .select-file-img-preview img {
+    margin-bottom: 20px;
+    max-width: 100%; }
+
+.form-display {
+  display: none; }
+
+.loading {
+  text-align: center; }
+
+#lnk-pdf-mobile {
+  color: #ed1c24;
+  cursor: pointer; }
+  #lnk-pdf-mobile:hover {
+    text-decoration: underline; }
+
+.desktop {
+  display: block; }
+
+.mobile {
+  display: none; }
+
+@media (max-width: 991.98px) {
+  .desktop {
+    display: none; }
+  .mobile {
+    display: block; } }

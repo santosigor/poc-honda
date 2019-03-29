@@ -1,0 +1,493 @@
+body {
+	font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+
+	background: #e8e8e8;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: solid 1px #d8d8d8;
+  padding: 20px;
+	text-align: center;
+	h1 {
+		a {
+			display: inline-block;
+			img {
+				width: 205px;
+    		height: auto;
+    		@media only screen and (max-width: 1017px) {
+			    width: auto;
+			    height: 40px;
+				}
+			}
+		}
+	}
+}
+
+.text-right {
+	text-align: right;
+}
+
+section {
+	padding: 85px 0;
+  @media screen and (max-width: 767.98px) {
+    padding: 30px 15px;
+	}
+	form {
+		.poc-honda-container {
+			width: 100%;
+			max-width: 850px;
+	    position: relative;
+	    margin: 0 auto;
+	    background: #fff;
+	    border: solid 1px #d8d8d8;
+	    padding: 20px 20px 0 20px;
+	    h2 {
+	    	font-size: 20px;
+		    color: #222;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    text-align: center;
+		    padding-top: 15px;
+	    }
+	    .poc-honda-steps {
+	    	border-top: 1px solid #ebebeb;
+		    border-bottom: 1px solid #ebebeb;
+		    padding: 12px 20px;
+		    ul {
+		    	margin:0;
+		    	padding: 0;
+		    	list-style: none;
+		    	display: flex;
+	    		display: -webkit-flex;
+	        justify-content: space-around;
+			    -moz-justify-content: space-around;
+			    -webkit-justify-content: space-around;
+			    -o-justify-content: space-around;
+			    -ms-justify-content: space-around;
+
+			    @media screen and (max-width: 767.98px) {
+				    flex-direction: column;
+				    -moz-flex-direction: column;
+				    -webkit-flex-direction: column;
+				    -o-flex-direction: column;
+				    -ms-flex-direction: column;
+					}
+		    	li {
+		    		padding-right: 40px;
+				    padding-left: 0px;
+				    position: relative;
+				    display: flex;
+				    display: -webkit-flex;
+				    align-items: center;
+				    -moz-align-items: center;
+				    -webkit-align-items: center;
+				    -o-align-items: center;
+				    -ms-align-items: center;
+				    font-weight: bold;
+				    color: #999;
+				    @media screen and (max-width: 767.98px) {
+					    margin: 10px auto;
+					    width: 160px;
+					    padding-right: 0px;
+						}
+				    .poc-honda-steps-number {
+				    	display: flex;
+	    				display: -webkit-flex;
+	    				width: 31px;
+					    height: 31px;
+					    border-radius: 50%;
+					    -moz-border-radius: 50%;
+					    -webkit-border-radius: 50%;
+					    -o-border-radius: 50%;
+					    -ms-border-radius: 50%;
+					    align-items: center;
+					    -moz-align-items: center;
+					    -webkit-align-items: center;
+					    -o-align-items: center;
+					    -ms-align-items: center;
+					    justify-content: center;
+					    -moz-justify-content: center;
+					    -webkit-justify-content: center;
+					    -o-justify-content: center;
+					    -ms-justify-content: center;
+					    border: 2px solid #999;
+					    margin-right: 15px;
+				    }
+				    &.active {
+				    	color: #222;
+				    	.poc-honda-steps-number {
+				    		border: 2px solid #222;
+				    	}
+				    	.poc-honda-steps-text {
+				    		color: #222;
+				    	}
+				    }
+		    	}
+		    }
+	    }
+	    .poc-honda-steps-content {
+	    	display: none;
+				padding: 40px 0 0 0;
+	    	&.active {
+	    		display: block;
+	    	}
+	    	.select-file {
+					border: 1px dashed #ccc;
+					padding: 25px;
+		    	text-align: center;
+					.select-file-name {
+						display: block;
+						margin-bottom: 20px;
+						&.success {
+							color: #27ae60;
+						}
+						&.error {
+							color: #ed1c24;
+						}
+					}
+					.ipt-file {
+						text-align: center;
+						span {
+							border: 1px solid #ccc;
+							background: #eee;
+							padding: 5px 20px;
+							display: inline-block;
+							-webkit-user-select: none;
+							-moz-user-select: none;
+							user-select: none;
+							position: relative;
+							overflow: hidden;
+							input {
+								opacity: 0;
+	  						filter: alpha(opacity=0);
+								position: absolute;
+								right: 0;
+								top: 0;
+								height: 100%;
+								cursor: pointer;
+							}
+						}
+					}
+			    @media screen and (max-width: 767.98px) {
+				  	padding: 20px;
+					}
+					&.error {
+						border-color: #ed1c24;
+					}
+				}
+				.form-group {
+					display: flex;
+    			display: -webkit-flex;
+    			align-items: center;
+			    -moz-align-items: center;
+			    -webkit-align-items: center;
+			    -o-align-items: center;
+			    -ms-align-items: center;
+			    margin-bottom: 30px;
+			    position: relative;
+
+			    @media screen and (max-width: 767.98px) {
+				    flex-direction: column;
+				    -moz-flex-direction: column;
+				    -webkit-flex-direction: column;
+				    -o-flex-direction: column;
+				    -ms-flex-direction: column;
+					}
+
+			    label {
+			    	display: inline-block;
+				    width: 165px;
+				    text-align: right;
+				    margin-right: 27px;
+			    	margin-bottom: 0;
+				    font-weight: 400;
+				    @media screen and (max-width: 767.98px) {
+					    width: 100%;
+					    text-align: left;
+					    margin-right: 0px;
+					    margin-bottom: 15px;
+						}
+			    }
+			    input, select, textarea {
+			    	outline: none;
+				    appearance: unset !important;
+				    -moz-appearance: unset !important;
+				    -webkit-appearance: unset !important;
+				    -o-appearance: unset !important;
+				    -ms-appearance: unset !important;
+			    	box-sizing: border-box;
+				    background: transparent;
+				    font-size: 14px;
+				    padding: 15px 20px;
+				    border: 1px solid #ebebeb;
+				    display: block;
+				    width: 415px;
+				    @media screen and (max-width: 767.98px) {
+					    width: 100%;
+						}
+
+						&.error {
+							border-color: #ed1c24;
+						}
+			    }
+			    textarea {
+			    	width: calc(100% - 192px);
+				    @media screen and (max-width: 767.98px) {
+					    width: 100%;
+						}
+			    }
+				}
+				a.bt {
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					user-select: none;
+			    padding: 15px 40px;
+			    text-transform: uppercase;
+			    background: #ed1c24;
+			    margin-left: 20px;
+			    border-bottom: solid 1px #8d0005;
+			    color: #ffffff;
+			    display: inline-block;
+			    font-size: 1rem;
+			    font-weight: 400;
+			    text-decoration: none!important;
+			    text-align: center;
+			    transition: background .2s ease-in-out, border .2s ease-in-out, color .2s ease-in-out;
+			    @media screen and (max-width: 767.98px) {
+				    padding: 15px 20px;
+					}
+			    &:hover {
+			    	background-color: #ffffff;
+		    		color: #8b0000;
+			    }
+			    &.back {
+			    	background: #f1f1f1;
+    				color: #999;
+			    	border-bottom: solid 1px #999;
+    				&:hover {
+				    	background-color: #ffffff;
+				    }
+			    }
+				}
+				.poc-honda-steps-button {
+					border-top: 1px solid #ebebeb;
+					padding: 20px 0;
+			    margin-top: 40px;
+			    text-align: right;
+				}
+				.form-assinatura {
+					display: flex;
+    			display: -webkit-flex;
+    			align-items: center;
+			    -moz-align-items: center;
+			    -webkit-align-items: center;
+			    -o-align-items: center;
+			    -ms-align-items: center;
+			    margin-bottom: 30px;
+
+			    @media screen and (max-width: 767.98px) {
+				    flex-direction: column;
+				    -moz-flex-direction: column;
+				    -webkit-flex-direction: column;
+				    -o-flex-direction: column;
+				    -ms-flex-direction: column;
+					}
+					* {
+						-webkit-user-select: none;
+						-moz-user-select: none;
+						user-select: none;
+					}
+
+					label {
+			    	display: inline-block;
+				    width: 165px;
+				    text-align: right;
+				    margin-right: 27px;
+			    	margin-bottom: 0;
+				    font-weight: 400;
+				    @media screen and (max-width: 767.98px) {
+					    width: 100%;
+					    text-align: left;
+					    margin-right: 0px;
+					    margin-bottom: 15px;
+						}
+			    }
+					.ipt {
+						position: relative;
+						overflow: hidden;
+						width: calc(100% - 192px);
+				    @media screen and (max-width: 767.98px) {
+					    width: 100%;
+						}
+						canvas {
+							margin: 0 auto;
+						}
+						.sigPad {
+							width:100%;
+						}
+						.sigWrapper.current {
+							border: 0;
+						  border: 1px solid #ebebeb;
+							overflow: hidden;
+							&.error {
+								border-color: #ed1c24;
+							}
+						}
+						.sigWrapper {
+							height:auto;
+							background: #fff;
+						}
+						.sigNav {
+							height: 20px;
+						}
+						.sigNav .clearButton {
+							cursor: pointer;
+						}
+					}
+				}
+				#poc-honda-dados-pdf {
+					display: none;
+					.title {
+						font-size: 20px;
+				    color: #222;
+				    font-weight: 700;
+				    text-transform: uppercase;
+				    margin-top: 20px;
+				    height: 30px;
+					}
+					#poc-honda-dados-pdf-xml {
+						width: 100%;
+				    margin-top: 20px;
+						p {
+							b {
+								font-weight: bold;
+							}
+						}
+					}
+					p {
+						margin-bottom: 20px;
+					}
+					.list-contrato {
+						p {
+							b {
+								font-weight: bold;
+							}
+						}
+					}
+					.assinatura-contrato {
+						margin-top: 60px;
+						height: 250px;
+						background-image: url('../images/logo-honda.jpg');
+						background-color: #3c3;
+					}
+					.page-break {
+						page-break-before: always;
+					}
+				}
+				#poc-honda-steps-success {
+					margin-bottom: 40px;
+					position: relative;
+					height: 700px;
+					@media (max-width: 991.98px) {
+						display: none;
+					}
+					iframe {
+						position:absolute;
+						right:0;
+						top:0;
+						height:100%;
+						width: 100%;
+						padding-bottom: 10px;
+						border:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.bt-email {
+	text-align: center;	
+	margin: 0 0 40px 0;
+	a {
+		margin-left: 0!important;
+	}
+}
+.select-file-img-preview {
+	text-align: center;	
+	img {
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+}
+
+.form-display {
+	display: none;
+}
+
+.loading {
+	text-align: center;
+}
+
+#lnk-pdf-mobile {
+	color: #ed1c24;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+
+@media (max-width: 991.98px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+}
+
+// footer {
+// 	background: black;
+// 	color: #fff;
+//   font-size: 0.875em;
+//   padding: 10px 0;
+//   @media (max-width: 991.98px) {
+//   	text-align: center;
+//   	padding: 20px;
+//   }
+// 	.info {
+// 		img {
+// 			height: 50px;
+//     	vertical-align: middle;
+// 		}
+// 	}
+// 	.legal {
+// 		padding: 13px 0;
+// 		a {
+// 			color: #fff;
+// 		}
+// 		@media (min-width: 992px) {
+// 			text-align: right;
+// 		}
+// 		@media (max-width: 991.98px) {
+// 			margin-top: 20px;
+// 			border-top: 1px solid #fff;
+// 		}
+// 	}
+// }
